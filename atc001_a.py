@@ -1,3 +1,7 @@
+# スタックオーバーフロー回避のため再帰深度上限を大きな値に設定
+# スタックによる実装を行うことが理想
+import sys
+sys.setrecursionlimit(10**7)  
 # 深さ優先探索
 H,W = map(int, input().split())
 c = [list(input()) for _ in range(H)]
